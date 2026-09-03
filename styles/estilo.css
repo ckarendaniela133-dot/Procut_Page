@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+    zoom: 1.5;
+}
+
+/* ===== Header ===== */
+
+
+.topbar {
+    background-color: #211633;
+    color: white;
+}
+
+.topbar-inner {
+    height: 33px;
+    padding: 0 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    height: 25px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 9px;
+}
+
+.menu .btn {
+    background-color: #168bd5;
+    color: white;
+    padding: 7px 13px;
+}
+
+.hero {
+    background-color: #302653;
+    padding: 0;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-left {
+    width: 50%;
+    color: #fff;
+    padding: 65px 70px;
+}
+
+.hero-left h1 {
+    margin: 0 0 18px;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.hero-left p {
+    margin: 0 0 22px;
+    max-width: 330px;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.hero-button {
+    display: flex;
+    gap: 6px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 13px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.btn.primary {
+    background: #fff;
+    color: #ff2d6d;
+    border: 1px solid #ff2d6d;
+}
+
+.btn.outline {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.hero-right {
+    width: 50%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/images/hojasFondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-image {
+    width: 25%;
+    height: auto;
+}
+
+/* ===== Features ===== */
+
+.features {
+    background: #fff;
+    padding: 40px 0 50px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 0 0 35px;
+    color: #ff2d6d;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.features-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 0 70px;
+}
+
+.feature-image-wrap {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-image {
+    width: 430px;
+    max-width: 100%;
+}
+
+.feature-text {
+    width: 40%;
+}
+
+.feature-text h3 {
+    color: #ff2d6d;
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.marketing-title {
+    color: #ff2d6d;
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.muted {
+    color: #666;
+    font-size: 11px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+.small-list {
+    font-size: 11px;
+    color: #444;
+    line-height: 1.8;
+    margin: 10px 0 0;
+}
+
+/* ===== Pricing ===== */
+.pricing {
+    background: #2a1f3f;
+    padding: 45px 0 55px;
+}
+
+.section-title.light {
+    color: #fff;
+}
+
+.pricing-desc {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.plans {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.plan-card {
+    background: #fff;
+    width: 31%;
+    border-radius: 6px;
+    padding: 18px 18px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.plan-card.middle {
+    transform: translateY(-10px);
+}
+
+.plan-name {
+    text-align: center;
+    color: #2a1f3f;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.plan-price {
+    text-align: center;
+    margin: 12px 0 8px;
+    color: #333;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.per {
+    font-size: 12px;
+    font-weight: 600;
+    color: #777;
+}
+
+.plan-items {
+    margin: 10px 0 18px;
+    color: #444;
+    font-size: 13px;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+
+.card-btn {
+    background: #ff2d6d;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: #2a1f3f;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    gap: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 700;
+}
