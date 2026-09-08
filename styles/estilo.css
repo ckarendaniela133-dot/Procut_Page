@@ -190,66 +190,79 @@ body {
 }
 
 /* ===== Pricing ===== */
+
 .pricing {
-    background: #2a1f3f;
-    padding: 45px 0 55px;
+    background: #1f1830;
+    padding: 35px 0 45px;
 }
 
 .section-title.light {
     color: #fff;
+    margin: 0 0 18px;
+    font-size: 24px;
 }
 
 .pricing-desc {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto 25px;
     padding: 0 20px;
     color: rgba(255, 255, 255, 0.75);
-    font-size: 13px;
-    line-height: 1.6;
+    font-size: 9px;
+    line-height: 1.5;
     text-align: center;
 }
 
 .plans {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
 
     display: flex;
     justify-content: space-between;
-    gap: 18px;
+    gap: 15px;
 }
 
 .plan-card {
     background: #fff;
-    width: 31%;
-    border-radius: 6px;
-    padding: 18px 18px 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    width: 32%;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 0 0 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .plan-card.middle {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+}
+
+.plan-top {
+    height: 55px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .plan-name {
     text-align: center;
     color: #2a1f3f;
     font-weight: 700;
-    font-size: 16px;
-    margin-top: 6px;
+    font-size: 11px;
+    margin: 5px 0 0;
 }
 
 .plan-price {
     text-align: center;
-    margin: 12px 0 8px;
+    margin: 0;
+    padding: 9px 0;
     color: #333;
-    font-size: 26px;
-    font-weight: 800;
+    font-size: 17px;
+    font-weight: 700;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .per {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 7px;
+    font-weight: 400;
     color: #777;
 }
 
@@ -264,11 +277,13 @@ body {
 .card-btn {
     background: #ff2d6d;
     color: #fff;
-    width: 100%;
+    width: 75%;
     text-align: center;
-    padding: 12px 0;
-    border-radius: 4px;
-    font-size: 13px;
+    padding: 7px 0;
+    border-radius: 3px;
+    font-size: 8px;
+    margin: 0 auto;
+    display: block;
 }
 
 /* ===== Footer ===== */
