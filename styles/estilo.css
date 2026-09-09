@@ -45,7 +45,7 @@ body {
 }
 
 .menu .btn {
-    background-color: #168bd5;
+    background: linear-gradient(90deg, #9333ea, #2563be);
     color: white;
     padding: 7px 13px;
 }
@@ -212,23 +212,25 @@ body {
     text-align: center;
 }
 
-.plans {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
 
+
+.plans {
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
+    padding-bottom: 20px;
 }
 
 .plan-card {
     background: #fff;
-    width: 32%;
+    width: 30%;
+    height: 395px;
     border-radius: 3px;
     overflow: hidden;
-    padding: 0 0 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
 }
 
 .plan-card.middle {
@@ -236,9 +238,9 @@ body {
 }
 
 .plan-top {
-    height: 55px;
     text-align: center;
-    padding-top: 10px;
+    padding: 17px 10px 10px;
+
 }
 
 .plan-name {
@@ -266,6 +268,7 @@ body {
     color: #777;
 }
 
+
 .plan-items {
     margin: 10px 0 18px;
     color: #444;
@@ -286,29 +289,57 @@ body {
     display: block;
 }
 
-/* ===== Footer ===== */
-.footer {
-    background: #2a1f3f;
-    color: rgba(255, 255, 255, 0.7);
+.plan-icon {
+    font-size: 10px;
+}
+
+.plan-description {
+    margin: 0 15px 15px;
+    color: #777;
+    font-size: 8px;
+    line-height: 1.6;
+}
+
+.pink {
+    color: #ff2d6d;
+}
+
+.dark {
+    color: #2a1f3f;
+}
+
+.plan-items span {
+    font-size: 10px;
+}
+
+
+footer {
+    width: 100%;
+    height: 58px;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 20px;
-    gap: 20px;
+    padding: 0 14%;
+    color: #333333;
+    font-size: 15px;
 }
 
-.footer p {
-    margin: 0;
-    font-size: 12px;
+.copyright span {
+    color: #df2783;
+    font-weight: 600;
 }
 
-.footer-links {
+.social {
     display: flex;
-    gap: 14px;
+    gap: 16px;
 }
 
-.footer-links a {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    font-weight: 700;
+.social a {
+    color: #222222;
+    font-size: 14px;
+}
+
+.social a:hover {
+    color: #df2783;
 }
