@@ -213,7 +213,6 @@ body {
 }
 
 
-
 .plans {
     width: 85%;
     margin: 0 auto;
@@ -222,6 +221,7 @@ body {
     gap: 20px;
     padding-bottom: 20px;
 }
+
 
 .plan-card {
     background: #fff;
@@ -232,6 +232,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 
 .plan-card.middle {
     transform: translateY(-8px);
@@ -268,17 +269,21 @@ body {
     color: #777;
 }
 
-
 .plan-items {
-    margin: 10px 0 18px;
+    margin: 10px 15px 15px;
     color: #444;
-    font-size: 13px;
-    line-height: 1.6;
-    padding-left: 10px;
+    font-size: 10px;
+    line-height: 1.8;
+    padding-left: 0;
+}
+
+.plan-items span {
+    font-size: 8px;
 }
 
 .card-btn {
-    background: #ff2d6d;
+    background: #168bd5;
+    ;
     color: #fff;
     width: 75%;
     text-align: center;
@@ -293,11 +298,14 @@ body {
     font-size: 10px;
 }
 
+
+
 .plan-description {
-    margin: 0 15px 15px;
-    color: #777;
-    font-size: 8px;
-    line-height: 1.6;
+    margin: 5px 15px 18px;
+    color: kard;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .pink {
@@ -309,7 +317,7 @@ body {
 }
 
 .plan-items span {
-    font-size: 10px;
+    font-size: 9px;
 }
 
 
@@ -342,4 +350,175 @@ footer {
 
 .social a:hover {
     color: #df2783;
+}
+
+@media (max-width: 1279px) {
+
+    body {
+
+        zoom: 1;
+
+    }
+
+    .topbar-inner {
+
+        padding: 0 5%;
+
+    }
+
+    .hero-left {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+
+    }
+
+    .features-inner {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+
+    }
+
+    .plans {
+        width: 90%;
+
+    }
+
+    footer {
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+
+}
+
+@media (max-width: 920px) {
+
+    .topbar-inner {
+
+        padding: 0 4%;
+
+    }
+
+    .menu {
+
+        gap: 12px;
+
+    }
+
+    .menu a {
+
+        font-size: 8px;
+
+    }
+
+    .hero-left {
+
+        padding: 55px 4%;
+
+    }
+
+    .hero-left h1 {
+
+        font-size: 34px;
+
+    }
+
+    .hero-left p {
+
+        max-width: 100%;
+
+    }
+
+    .hero-right {
+
+        height: 380px;
+
+    }
+
+    .hero-image {
+
+        width: 35%;
+
+        max-width: 100%;
+
+    }
+
+    .features {
+
+        padding: 35px 0 45px;
+
+    }
+
+    .features-inner {
+
+        gap: 35px;
+
+        padding: 0 4%;
+
+    }
+
+    .feature-image-wrap {
+
+        width: 50%;
+
+    }
+
+    .feature-image {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+    .feature-text {
+
+        width: 50%;
+
+    }
+
+    .feature-text h3 {
+
+        font-size: 18px;
+
+    }
+
+    .marketing-title {
+
+        font-size: 14px;
+
+    }
+
+    .muted,
+
+    .small-list {
+
+        font-size: 10px;
+
+    }
+
+    .plans {
+
+        width: 94%;
+
+        gap: 12px;
+
+    }
+
+    .plan-card {
+
+        width: 33.333%;
+
+    }
+
+    footer {
+
+        padding: 0 4%;
+
+    }
+
 }
