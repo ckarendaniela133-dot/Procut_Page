@@ -2,98 +2,71 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background: #f2f2f2;
     color: #222;
-    zoom: 1.5;
+    overflow-x: hidden;
 }
 
-/* ===== Header ===== */
-
-
 .topbar {
-    background-color: #211633;
-    color: white;
+    width: 100%;
+    height: 58px;
+    background: #211633;
+    color: #fff;
 }
 
 .topbar-inner {
-    height: 33px;
-    padding: 0 70px;
+    width: 86%;
+    height: 100%;
+    margin: 0 auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
 .logo {
-    height: 25px;
+    width: auto;
+    height: 45px;
+    object-fit: contain;
 }
 
 .menu {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 32px;
 }
 
 .menu a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 9px;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    opacity: 0.85;
 }
 
 .menu .btn {
     background: linear-gradient(90deg, #9333ea, #2563be);
-    color: white;
-    padding: 7px 13px;
-}
-
-.hero {
-    background-color: #302653;
-    padding: 0;
-}
-
-.hero-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.hero-left {
-    width: 50%;
     color: #fff;
-    padding: 65px 70px;
-}
-
-.hero-left h1 {
-    margin: 0 0 18px;
-    font-size: 40px;
-    line-height: 1;
-}
-
-.hero-left p {
-    margin: 0 0 22px;
-    max-width: 330px;
-    color: #fff;
-    font-size: 11px;
-    line-height: 1.5;
-}
-
-.hero-button {
-    display: flex;
-    gap: 6px;
+    padding: 13px 25px;
+    border-radius: 3px;
 }
 
 .btn {
     display: inline-block;
-    padding: 9px 13px;
-    border-radius: 2px;
     text-decoration: none;
-    font-size: 9px;
     font-weight: 600;
+    border-radius: 3px;
 }
 
 .btn.primary {
@@ -108,204 +81,272 @@ body {
     border: 1px solid #fff;
 }
 
+.hero {
+    width: 100%;
+    background: #302653;
+}
+
+.hero-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.hero-left {
+    width: 50%;
+    min-height: 480px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-left h1 {
+    margin: 0 0 25px;
+    color: #fff;
+    font-size: 68px;
+    line-height: 1.08;
+    font-weight: 700;
+}
+
+.hero-left p {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 0 35px;
+
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.hero-button .btn {
+    padding: 14px 25px;
+    font-size: 16px;
+}
+
 .hero-right {
     width: 50%;
-    height: 420px;
+    min-height: 480px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     background-image: url("../assets/images/hojasFondo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.hero-image {
-    width: 25%;
+.hero-right .hero-image {
+    width: 210px;
+    max-width: 55%;
     height: auto;
+    object-fit: contain;
 }
 
-/* ===== Features ===== */
-
 .features {
+    width: 100%;
     background: #fff;
-    padding: 40px 0 50px;
+    padding: 45px 0 55px;
 }
 
 .section-title {
+    margin: 0 0 40px;
+    padding: 0 20px;
+
     text-align: center;
-    margin: 0 0 35px;
     color: #ff2d6d;
-    font-size: 24px;
+    font-size: 32px;
+    line-height: 1.2;
     font-weight: 700;
 }
 
 .features-inner {
+    width: 86%;
+    max-width: 1200px;
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 70px;
-    padding: 0 70px;
 }
 
 .feature-image-wrap {
     width: 50%;
+
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .feature-image {
-    width: 430px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
 }
 
 .feature-text {
-    width: 40%;
+    width: 45%;
 }
 
 .feature-text h3 {
+    margin: 0 0 18px;
     color: #ff2d6d;
-    margin: 0 0 15px;
-    font-size: 20px;
-}
-
-.marketing-title {
-    color: #ff2d6d;
-    margin: 0 0 10px;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 .muted {
+    margin: 0 0 18px;
     color: #666;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 1.6;
-    margin: 0 0 15px;
+}
+
+.marketing-title {
+    margin: 0 0 12px;
+    color: #ff2d6d;
+    font-size: 18px;
 }
 
 .small-list {
-    font-size: 11px;
+    margin: 0;
     color: #444;
+    font-size: 14px;
     line-height: 1.8;
-    margin: 10px 0 0;
 }
 
-/* ===== Pricing ===== */
-
 .pricing {
+    width: 100%;
     background: #1f1830;
-    padding: 35px 0 45px;
+    padding: 45px 0 0;
 }
 
 .section-title.light {
+    margin: 0 0 20px;
     color: #fff;
-    margin: 0 0 18px;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .pricing-desc {
-    max-width: 700px;
-    margin: 0 auto 25px;
-    padding: 0 20px;
+    width: 80%;
+    max-width: 850px;
+    margin: 0 auto 35px;
+
     color: rgba(255, 255, 255, 0.75);
-    font-size: 9px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.6;
     text-align: center;
 }
 
-
 .plans {
-    width: 85%;
+    width: 86%;
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding-bottom: 20px;
-}
 
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding-bottom: 35px;
+}
 
 .plan-card {
-    background: #fff;
-    width: 30%;
+    width: calc((100% - 60px) / 3);
+    min-width: 0;
     height: 395px;
-    border-radius: 3px;
+
+    background: #fff;
+    border-radius: 4px;
     overflow: hidden;
+
     display: flex;
     flex-direction: column;
+
+    color: #222;
 }
 
-
 .plan-card.middle {
-    transform: translateY(-8px);
+    transform: translateY(-12px);
 }
 
 .plan-top {
-    text-align: center;
-    padding: 17px 10px 10px;
+    width: 100%;
+    height: 155px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 10px 10px;
+}
+
+.plan-top .hero-image {
+    width: 48px;
+    height: 48px;
+    max-width: 48px;
+
+    object-fit: contain;
+    margin-bottom: 12px;
 }
 
 .plan-name {
-    text-align: center;
+    margin: 0;
+
     color: #2a1f3f;
+    font-size: 15px;
     font-weight: 700;
-    font-size: 11px;
-    margin: 5px 0 0;
+    text-align: center;
 }
 
 .plan-price {
-    text-align: center;
-    margin: 0;
-    padding: 9px 0;
+    width: 100%;
+
+    padding: 12px 5px;
+
     color: #333;
-    font-size: 17px;
+    font-size: 23px;
     font-weight: 700;
+    text-align: center;
+
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
 
 .per {
-    font-size: 7px;
+    font-size: 10px;
     font-weight: 400;
     color: #777;
 }
 
 .plan-items {
-    margin: 10px 15px 15px;
+    margin: 12px 25px 8px;
+    padding: 0;
+
     color: #444;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.8;
-    padding-left: 0;
 }
 
 .plan-items span {
-    font-size: 8px;
-}
-
-.card-btn {
-    background: #168bd5;
-    ;
-    color: #fff;
-    width: 75%;
-    text-align: center;
-    padding: 7px 0;
-    border-radius: 3px;
-    font-size: 8px;
-    margin: 0 auto;
-    display: block;
-}
-
-.plan-icon {
-    font-size: 10px;
-}
-
-
-
-.plan-description {
-    margin: 5px 15px 18px;
-    color: kard;
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: center;
+    font-size: 11px;
 }
 
 .pink {
@@ -316,21 +357,44 @@ body {
     color: #2a1f3f;
 }
 
-.plan-items span {
-    font-size: 9px;
+.plan-description {
+    margin: auto 20px 15px;
+
+    color: #666;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: center;
 }
 
+.card-btn {
+    width: 75%;
+
+    margin: 0 auto 15px;
+    padding: 8px 5px;
+
+    display: block;
+
+    background: #168bd5;
+    color: #fff;
+
+    font-size: 10px;
+    text-align: center;
+    border-radius: 3px;
+}
 
 footer {
     width: 100%;
-    height: 58px;
-    background-color: white;
+    min-height: 70px;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 14%;
-    color: #333333;
-    font-size: 15px;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: #fff;
+    color: #333;
+    font-size: 13px;
 }
 
 .copyright span {
@@ -340,185 +404,664 @@ footer {
 
 .social {
     display: flex;
-    gap: 16px;
+    align-items: center;
+    gap: 20px;
 }
 
 .social a {
-    color: #222222;
+    color: #222;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .social a:hover {
     color: #df2783;
 }
 
-@media (max-width: 1279px) {
-
-    body {
-
-        zoom: 1;
-
-    }
+@media (min-width: 1280px) {
 
     .topbar-inner {
-
-        padding: 0 5%;
-
+        width: 86%;
     }
 
     .hero-left {
-
-        padding-left: 5%;
-
-        padding-right: 5%;
-
+        min-height: 480px;
     }
 
-    .features-inner {
-
-        padding-left: 5%;
-
-        padding-right: 5%;
-
-    }
-
-    .plans {
-        width: 90%;
-
-    }
-
-    footer {
-        padding-left: 5%;
-        padding-right: 5%;
-
+    .hero-right {
+        min-height: 480px;
     }
 
 }
 
-@media (max-width: 920px) {
+@media (min-width: 921px) and (max-width: 1279px) {
+
+    .topbar {
+        height: 55px;
+    }
 
     .topbar-inner {
+        width: 90%;
+    }
 
-        padding: 0 4%;
-
+    .logo {
+        height: 40px;
     }
 
     .menu {
-
-        gap: 12px;
-
+        gap: 22px;
     }
 
     .menu a {
+        font-size: 13px;
+    }
 
-        font-size: 8px;
+    .menu .btn {
+        padding: 11px 18px;
+    }
 
+    .hero-left,
+    .hero-right {
+        min-height: 400px;
     }
 
     .hero-left {
-
-        padding: 55px 4%;
-
+        padding: 40px;
     }
 
     .hero-left h1 {
-
-        font-size: 34px;
-
+        font-size: 52px;
     }
 
     .hero-left p {
-
-        max-width: 100%;
-
+        font-size: 14px;
     }
 
-    .hero-right {
-
-        height: 380px;
-
+    .hero-button .btn {
+        font-size: 13px;
+        padding: 12px 20px;
     }
 
-    .hero-image {
-
-        width: 35%;
-
-        max-width: 100%;
-
-    }
-
-    .features {
-
-        padding: 35px 0 45px;
-
+    .hero-right .hero-image {
+        width: 175px;
     }
 
     .features-inner {
-
-        gap: 35px;
-
-        padding: 0 4%;
-
+        width: 90%;
+        gap: 45px;
     }
 
-    .feature-image-wrap {
-
-        width: 50%;
-
-    }
-
-    .feature-image {
-
-        width: 100%;
-
-        max-width: 100%;
-
-    }
-
-    .feature-text {
-
-        width: 50%;
-
+    .section-title {
+        font-size: 28px;
     }
 
     .feature-text h3 {
-
-        font-size: 18px;
-
-    }
-
-    .marketing-title {
-
-        font-size: 14px;
-
-    }
-
-    .muted,
-
-    .small-list {
-
-        font-size: 10px;
-
+        font-size: 22px;
     }
 
     .plans {
-
-        width: 94%;
-
-        gap: 12px;
-
+        width: 90%;
+        gap: 20px;
     }
 
     .plan-card {
+        width: calc((100% - 40px) / 3);
+    }
 
-        width: 33.333%;
+}
 
+
+@media (min-width: 769px) and (max-width: 920px) {
+
+    .topbar {
+        height: 50px;
+    }
+
+    .topbar-inner {
+        width: 92%;
+    }
+
+    .logo {
+        height: 36px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+    .menu .btn {
+        padding: 9px 14px;
+    }
+
+    .hero-left,
+    .hero-right {
+        min-height: 350px;
+    }
+
+    .hero-left {
+        padding: 30px;
+    }
+
+    .hero-left h1 {
+        font-size: 43px;
+    }
+
+    .hero-left p {
+        font-size: 12px;
+        max-width: 400px;
+    }
+
+    .hero-button .btn {
+        font-size: 11px;
+        padding: 10px 16px;
+    }
+
+    .hero-right .hero-image {
+        width: 145px;
+    }
+
+    .features {
+        padding: 35px 0 45px;
+    }
+
+    .features-inner {
+        width: 92%;
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .feature-text h3 {
+        font-size: 20px;
+    }
+
+    .muted,
+    .small-list {
+        font-size: 11px;
+    }
+
+    .plans {
+        width: 92%;
+        gap: 12px;
+    }
+
+    .plan-card {
+        width: calc((100% - 24px) / 3);
+        height: 365px;
+    }
+
+    .plan-top {
+        height: 135px;
+    }
+
+    .plan-top .hero-image {
+        width: 42px;
+        height: 42px;
+    }
+
+    .plan-name {
+        font-size: 12px;
+    }
+
+    .plan-price {
+        font-size: 18px;
+    }
+
+    .plan-items {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 10px;
+    }
+
+    .plan-description {
+        font-size: 8px;
     }
 
     footer {
+        padding: 0 5%;
+    }
+}
 
-        padding: 0 4%;
 
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .topbar {
+        height: 48px;
     }
 
+    .topbar-inner {
+        width: 94%;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 9px;
+    }
+
+    .menu .btn {
+        padding: 8px 11px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero-inner {
+        flex-direction: row;
+    }
+
+    .hero-left {
+        width: 50%;
+        min-height: 270px;
+        padding: 25px 20px;
+    }
+
+    .hero-right {
+        width: 50%;
+        min-height: 270px;
+    }
+
+    .hero-left h1 {
+        margin-bottom: 12px;
+        font-size: 34px;
+        line-height: 1.05;
+    }
+
+    .hero-left p {
+        max-width: 220px;
+        margin-bottom: 15px;
+        font-size: 9px;
+        line-height: 1.4;
+    }
+
+    .hero-button {
+        gap: 6px;
+    }
+
+    .hero-button .btn {
+        padding: 8px 11px;
+        font-size: 8px;
+    }
+
+    .hero-right .hero-image {
+        width: 105px;
+    }
+
+
+    /* ---------- FEATURES ---------- */
+
+    .features {
+        padding: 25px 0 30px;
+    }
+
+    .section-title {
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+
+    .features-inner {
+        width: 92%;
+        gap: 25px;
+    }
+
+    .feature-image-wrap {
+        width: 50%;
+    }
+
+    .feature-text {
+        width: 50%;
+    }
+
+    .feature-image {
+        max-width: 230px;
+    }
+
+    .feature-text h3 {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .muted {
+        margin-bottom: 8px;
+        font-size: 8px;
+        line-height: 1.45;
+    }
+
+    .marketing-title {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+
+    .small-list {
+        font-size: 8px;
+        line-height: 1.6;
+    }
+
+
+    /* ---------- PRICING ---------- */
+
+    .pricing {
+        padding: 25px 0 0;
+    }
+
+    .section-title.light {
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+
+    .pricing-desc {
+        width: 90%;
+        margin-bottom: 20px;
+        font-size: 7px;
+        line-height: 1.45;
+    }
+
+    .plans {
+        width: 90%;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .plan-card {
+        width: calc((100% - 20px) / 3);
+        height: 310px;
+        border-radius: 3px;
+    }
+
+    .plan-card.middle {
+        transform: translateY(-6px);
+    }
+
+    .plan-top {
+        height: 105px;
+        padding: 8px 5px;
+    }
+
+    .plan-top .hero-image {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 6px;
+    }
+
+    .plan-name {
+        font-size: 9px;
+    }
+
+    .plan-price {
+        padding: 7px 3px;
+        font-size: 14px;
+    }
+
+    .per {
+        font-size: 6px;
+    }
+
+    .plan-items {
+        margin: 7px 10px 5px;
+        font-size: 7px;
+        line-height: 1.7;
+    }
+
+    .plan-items span {
+        font-size: 6px;
+    }
+
+    .plan-description {
+        margin: auto 8px 8px;
+        font-size: 6px;
+        line-height: 1.4;
+    }
+
+    .card-btn {
+        width: 75%;
+        margin-bottom: 8px;
+        padding: 5px 2px;
+        font-size: 6px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        min-height: 45px;
+        padding: 0 5%;
+        font-size: 8px;
+    }
+
+    .social {
+        gap: 10px;
+    }
+
+    .social a {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 352px) and (max-width: 480px) {
+
+    .topbar {
+        height: auto;
+        min-height: 55px;
+    }
+
+    .topbar-inner {
+        width: 92%;
+        min-height: 55px;
+
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 8px 0;
+        gap: 8px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 7px 10px;
+    }
+
+    .menu a {
+        font-size: 8px;
+    }
+
+    .menu .btn {
+        padding: 7px 10px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero-inner {
+        flex-direction: column;
+    }
+
+    .hero-left {
+        width: 100%;
+        min-height: 220px;
+        padding: 30px 20px 25px;
+    }
+
+    .hero-right {
+        width: 100%;
+        min-height: 250px;
+    }
+
+    .hero-left h1 {
+        margin-bottom: 12px;
+        font-size: 32px;
+    }
+
+    .hero-left p {
+        max-width: 300px;
+        margin-bottom: 18px;
+        font-size: 9px;
+    }
+
+    .hero-button {
+        flex-wrap: wrap;
+    }
+
+    .hero-button .btn {
+        padding: 8px 12px;
+        font-size: 8px;
+    }
+
+    .hero-right .hero-image {
+        width: 120px;
+    }
+
+
+    /* ---------- FEATURES ---------- */
+
+    .features {
+        padding: 30px 0 35px;
+    }
+
+    .section-title {
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+
+    .features-inner {
+        width: 88%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .feature-image-wrap,
+    .feature-text {
+        width: 100%;
+    }
+
+    .feature-image {
+        max-width: 300px;
+    }
+
+    .feature-text h3 {
+        font-size: 17px;
+    }
+
+    .muted,
+    .small-list {
+        font-size: 9px;
+    }
+
+    .marketing-title {
+        font-size: 11px;
+    }
+
+
+    /* ---------- PRICING ---------- */
+
+    .pricing {
+        padding: 30px 0 0;
+    }
+
+    .section-title.light {
+        font-size: 22px;
+    }
+
+    .pricing-desc {
+        width: 88%;
+        font-size: 7px;
+    }
+
+    .plans {
+        width: 90%;
+        gap: 8px;
+    }
+
+    .plan-card {
+        width: calc((100% - 16px) / 3);
+        height: 300px;
+    }
+
+    .plan-card.middle {
+        transform: translateY(-5px);
+    }
+
+    .plan-top {
+        height: 95px;
+    }
+
+    .plan-top .hero-image {
+        width: 28px;
+        height: 28px;
+    }
+
+    .plan-name {
+        font-size: 8px;
+    }
+
+    .plan-price {
+        font-size: 12px;
+        padding: 6px 2px;
+    }
+
+    .per {
+        font-size: 5px;
+    }
+
+    .plan-items {
+        margin: 6px 6px 3px;
+        font-size: 6px;
+        line-height: 1.65;
+    }
+
+    .plan-items span {
+        font-size: 5px;
+    }
+
+    .plan-description {
+        margin: auto 5px 6px;
+        font-size: 5px;
+    }
+
+    .card-btn {
+        width: 80%;
+        margin-bottom: 6px;
+        padding: 4px 1px;
+        font-size: 5px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        min-height: 55px;
+        padding: 10px 5%;
+
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+
+        text-align: center;
+        font-size: 7px;
+    }
+
+    .social {
+        gap: 10px;
+    }
+
+    .social a {
+        font-size: 9px;
+    }
 }
